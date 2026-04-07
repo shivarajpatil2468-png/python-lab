@@ -1,0 +1,8 @@
+check weather a given program is divided by 11 and 5
+
+num = int(input("Enter a number: "))
+
+if num % 11 == 0 and num % 5 == 0:
+    print("The number is divisible by both 11 and 5")
+else:
+    print("The number is NOT divisible by both 11 and 5")
