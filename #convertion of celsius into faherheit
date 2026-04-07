@@ -1,0 +1,31 @@
+#convertion of celsius into faherheit
+
+celsius = float(input("Enter temperature in Celsius: "))
+
+fahrenheit = (celsius * 9/5) + 32
+
+print("Fahrenheit =", fahrenheit)
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+average = (num1 + num2 + num3) / 3
+
+print("Average =", average)
+
+if num > 0:
+    print("The number is Positive")
+elif num < 0:
+    print("The number is Negative")
+else:
+    print("The number is Zero")
+
+num = float(input("Enter a number: "))
+
+if num > 0:
+    print("The number is Positive")
+elif num < 0:
+    print("The number is Negative")
+else:
+    print("The number is Zero")
