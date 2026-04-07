@@ -1,0 +1,4 @@
+square of a number
+ 
+ a=int(input("entre a number: "))
+print("square of a given number: ",a*a)
