@@ -1,0 +1,8 @@
+#stop printing when a specific number is found
+limit = int(input("Enter the limit: "))
+stop_num = int(input("Enter the number to stop at: "))
+
+for i in range(1, limit + 1):
+    if i == stop_num:
+        break
+    print(i)
