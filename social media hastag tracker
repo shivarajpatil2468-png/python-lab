@@ -1,0 +1,27 @@
+ #Social Media Hashtag Tracker
+
+hashtags = ["#fun", "#python", "#fun", "#code", "#python"]
+
+# Frequency of hashtags
+frequency = {}
+
+for tag in hashtags:
+    if tag in frequency:
+        frequency[tag] += 1
+    else:
+        frequency[tag] = 1
+
+print("Frequency of each hashtag:")
+for key, value in frequency.items():
+    print(key, ":", value)
+
+# Most repeated hashtag
+most_repeated = max(frequency, key=frequency.get)
+print("Most Repeated Hashtag =", most_repeated)
+
+# Unique hashtags
+unique_tags = list(set(hashtags))
+print("Unique Hashtags =", unique_tags)
+
+# Remove duplicate hashtags
+print("After Removing Duplicates =", unique_tags)
