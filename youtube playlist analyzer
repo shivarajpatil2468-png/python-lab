@@ -1,0 +1,26 @@
+# YouTube Playlist Analyzer
+
+def analyze_playlist(videos):
+    # Total watch time
+    total_time = sum(videos)
+    
+    # Longest video
+    longest = max(videos)
+    
+    # Average video duration
+    average = total_time / len(videos)
+    
+    # Videos shorter than 5 minutes
+    short_videos = [v for v in videos if v < 5]
+    
+    print("\n--- Playlist Analysis ---")
+    print("Total Watch Time:", total_time, "minutes")
+    print("Longest Video:", longest, "minutes")
+    print("Average Video Duration:", round(average, 2), "minutes")
+    print("Videos shorter than 5 minutes:", short_videos)
+
+# Sample Input
+playlist = [12, 4, 8, 15, 3, 20]
+
+# Run analysis
+analyze_playlist(playlist)
